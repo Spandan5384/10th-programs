@@ -1,0 +1,63 @@
+class Bank
+{
+    int a;
+    double P;
+    double n;
+    double r;
+    double A;
+    void option()
+    {
+    System.out.println("Welcome");
+    System.out.println("");
+    System.out.println("Choose the type of account you want to open");
+    System.out.println("");
+    System.out.println("1) Term Deposit");
+    System.out.println("2) Recurring Deposit");
+    System.out.println("");
+    System.out.println("* open 'void choose' and state the number corresponding to your choice ");
+}
+void choose(int choice)
+{
+    a=choice;
+    switch (a)
+    { 
+    case 1:
+    {   
+     System.out .println("Thank you for choosing Term Deposit");
+     System.out.println("");
+     System.out.println("* open 'void Term_Deposit' and give the details of your deposit ");
+    }
+    break;
+    case 2:
+    {
+     System.out .println("Thank you for choosing Rcurring Deposit");
+     System.out.println("");
+     System.out.println("* open 'void Recurring_Deposit' and give the details of your deposit ");
+    }
+    break;
+    default:
+    {
+        System.out.println("Invalid choice \n please choose again");
+    }
+   break;
+}
+}
+void Term_Deposit(double Principle,double time_in_years,double rate)
+{
+    P=Principle;
+    n=time_in_years;
+    r=rate;
+    double amount= P*Math.pow(1+r/100,n);
+    A=amount;
+    System.out.println("The total Amount is "+A);
+}
+void Recurring_Deposit(double Principle,double time_in_months,double rate)
+{
+    P=Principle;
+    n=time_in_months;
+    r=rate;
+    double amount= P*n+P*((n*(n+1))/2)*r/100*1/12;
+    A=amount;
+    System.out.println("The total Amount is "+A);
+}
+}
