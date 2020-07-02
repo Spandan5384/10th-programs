@@ -1,0 +1,36 @@
+class Employee
+{
+    String a;
+    double b;
+    double c;
+    double d;
+    void name(String name_of_employee)
+    {
+        a=name_of_employee;
+    }
+    void salary(double salary)
+    {
+        b=salary;
+    }
+    void house_rent(double totalHR)
+    {
+         c=totalHR;
+        }
+    void calc()
+    {
+        double totalsalary=b+(c*1/2)-((b+(c*1/2))*30/100);
+        d=totalsalary;
+    }
+    void display()
+    {
+        System.out.println("Total salary="+d);
+        System.out.println("Name of Employee:-"+a);
+    }
+    public static void main()
+    {
+        Employee obj=new Employee();
+        obj.name("Sam");
+        obj.calc();
+        obj.display();
+    }
+}
