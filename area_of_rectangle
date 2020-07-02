@@ -1,0 +1,18 @@
+class area_of_rectangle
+{
+    int length,breadth,area;
+    
+    void init()
+    {
+        length=10;
+        breadth=20;
+    }
+    void calculate()
+    {
+        area=length*breadth;
+    }
+    void display()
+    {
+        System.out.println("area of the rectangle is"+area);
+    }
+}
