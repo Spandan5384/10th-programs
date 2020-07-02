@@ -1,0 +1,28 @@
+class Circle
+{
+    int rad;
+    double area;
+    
+    void getRadius(int radius)//parametrized function,called function
+{
+rad=radius;
+}
+void calcArea()//non parametrized function
+{
+    final double pi=3.142;
+    area =pi*rad*rad;
+}
+void displayResult()
+{
+    System.out.println("The area of the circle is "+ area);
+}
+public static void main()
+{
+    Circle objref;//reference variable
+    objref=new Circle();//oblect creation
+    
+    objref.getRadius(5);//actual parameters
+    objref.calcArea();
+    objref.displayResult();
+}
+}
