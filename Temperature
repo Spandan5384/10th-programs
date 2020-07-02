@@ -1,0 +1,33 @@
+ class Temperature
+{
+    Double temp;
+    Temperature()
+    {
+        temp=92.0;
+    }
+    Temperature(double t)
+    {
+        temp=t;
+    }
+    double convert2Celsius()
+    {
+        double cel=(5.0/9)*(temp-32);
+        return cel;
+    }
+    public double getTemp()
+    {
+        return temp;
+    }}
+    class ImplementTemperature
+    {
+        public static void main()
+        {
+            Temperature dayTemp=new Temperature(94);
+            System.out.println("Temperature in Fahreneit is:"+dayTemp.getTemp());
+            System.out.println("Temperature in celsius is:"+dayTemp.convert2Celsius());
+            Temperature dTemp=new Temperature();
+            System.out.println("Other Temperature in Fahrenheit is:" +dTemp.getTemp());
+              System.out.println("Other Temperature in celsius is:" +dTemp.convert2Celsius());
+            }
+        }
+    
