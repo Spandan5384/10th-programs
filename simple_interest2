@@ -1,0 +1,20 @@
+class simple_interest2
+{
+    double a,b,c,interest;
+    
+    void init(double principle,double time,double rate)
+    {
+        principle=a;
+        time=b;
+        rate=c;
+    }
+    void calc()
+    {
+      interest=(a*b*c)/100;
+       
+    }
+    void display()
+    {
+        System.out.println("The amount of interest is "+interest);
+    }
+}
