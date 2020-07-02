@@ -1,0 +1,9 @@
+class radius
+{
+    public static void main(double a)
+    {
+        double radius;
+        radius=a/(3.14*2);
+        System.out.println("the radius is "+radius);
+    }
+}
